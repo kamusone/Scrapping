@@ -1,21 +1,6 @@
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
-=begin
-url = "https://coinmarketcap.com/all/views/all"
-def cours_cryptomonnais(url)
-  page = Nokogiri::HTML(open(url))
-  tableau_crypto=[]
-  links = page.css(".currency-name-container").css ("price").text
-  links.each do |crypto|
-    monnaie = crypto['href']
-    cours = crypto.text
-  end
-  return tableau_crypto
-end
-cours_cryptomonnais
-
-=end
 
 def noms
 tableau_nom = []
